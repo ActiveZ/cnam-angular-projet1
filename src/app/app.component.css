@@ -1,0 +1,11 @@
+div {
+    display: flex;
+}
+
+app-content {
+    width: 75%;
+}
+
+app-side {
+    width: 25%
+}

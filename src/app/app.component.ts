@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projet1';
+  title = 'projet666';
+
+  ngOnInit(): void {
+    
+  }
+
+  // article:string[] = ['Article1: bla bla bla', 'Aricle2: bla bla bla', 'Article3: bla bla bla'];
+
+  articleAffichage: any;
+  id_article: number;
+
+  // addArticle(articleString) {
+  //   this.articleAffichage = articleString;
+  // }
+
 }
