@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  menus: string[] = ['Home', 'Users', 'Logout'] // public par défaut
-  item:string = ""
+  // menus: string[] = ['Authentification', 'Librairie'] // public par défaut
+  // item:string = ""
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onGo() {
-    this.menus.push(this.item)
-  }
+  // onGo() {
+  //   this.menus.push(this.item)
+  // }
 }
