@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Article } from '../articles'
+import { ArrayArticle } from '../mock-articles'
 
 @Component({
   selector: 'app-content',
@@ -7,22 +7,15 @@ import { Article } from '../articles'
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
+  
+  @Input() articleAffichageContent: string;
+  @Input() idArticle: number;
+
+  public arr = ArrayArticle
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-  @Input() articleAffichageContent: string;
-  @Input() id_Article: number;
-  
-
-  // article: Article = {
-  //   id:1,
-  //   content: "bbbbb"
-  // }
-
-  // article:string[] = Article[];
-  // article:string[] = ['Article1: bla bla bla', 'Aricle2: bla bla bla', 'Article3: bla bla bla'];
 
 }

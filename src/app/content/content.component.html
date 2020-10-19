@@ -1,3 +1,5 @@
 <div>
-    {{articleAffichageContent}}
+    <span *ngIf="this.idArticle" >
+        {{ arr[this.idArticle - 1]['content']}}
+    </span>
 </div>

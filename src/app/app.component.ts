@@ -9,16 +9,13 @@ export class AppComponent {
   title = 'projet666';
 
   ngOnInit(): void {
-    
   }
 
-  // article:string[] = ['Article1: bla bla bla', 'Aricle2: bla bla bla', 'Article3: bla bla bla'];
+  idArticle: number;
 
-  articleAffichage: any;
-  id_article: number;
-
-  // addArticle(articleString) {
-  //   this.articleAffichage = articleString;
-  // }
+  displayArticle(articleString) {
+    this.idArticle = articleString;
+    // console.log(articleString)
+  }
 
 }

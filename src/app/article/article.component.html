@@ -2,8 +2,8 @@
     <p>article works!</p>
     <p>
         <label for="select_article">Titres des articles</label><br>
-        <select name="select_article" id="select_article" [(ngModel)] = "item" (change)="onChangeSelect(item.id)">
-            <option *ngFor="let item of liste_article" [ngValue]="item" >{{ item.titre_article }}</option>
+        <select name="select_article" id="select_article" [(ngModel)] = "item" (change)="onChangeSelect(item)">
+            <option *ngFor="let item of arr" [ngValue]="item.id" >{{ item.titre_article }}</option>
         </select>
     </p>
 </div>

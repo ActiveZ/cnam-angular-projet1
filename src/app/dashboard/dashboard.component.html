@@ -1,0 +1,7 @@
+<p>dashboard works!</p>
+<app-menu></app-menu>
+<div>
+    <app-content [idArticle]="idArticle"></app-content>
+    <app-side></app-side>
+</div>
+<app-article (eventArticle)="displayArticle($event)"></app-article>
